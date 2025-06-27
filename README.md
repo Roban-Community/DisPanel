@@ -60,22 +60,10 @@ npm install
 
 ---
 
-### 🔐 Step 3: Environment Setup
-
-Create `.env` files in both `client/` and `server/`.
-
-**Example `.env` for server:**
-
-```env
-PORT=3001
-DATABASE_URL=your_postgresql_url
-SESSION_SECRET=your_secret_here
-DISCORD_CLIENT_ID=your_discord_client_id
-```
 
 ---
 
-### 🗃 Step 4: Set Up Database
+### 🗃 Step 3: Set Up Database
 
 Ensure PostgreSQL is running.
 
@@ -88,7 +76,7 @@ npx drizzle-kit push
 
 ---
 
-### 🧪 Step 5: Run the App in Development Mode
+### 🧪 Step 4: Run the App in Development Mode
 
 #### Start Backend
 
@@ -112,7 +100,7 @@ http://localhost:5173
 
 ---
 
-### 🚀 Step 6: Build for Production
+### 🚀 Step 5: Build for Production
 
 #### Build the frontend:
 
