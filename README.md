@@ -6,8 +6,6 @@ DisPanel is a full-featured web-based control panel to manage Discord bots with 
 
 ## 📸 Screenshots
 
-> UI preview images (add your images in the `images/` folder):
-
 - Dashboard  
   ![Dashboard](images/image1.png)
 
