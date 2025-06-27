@@ -1,13 +1,8 @@
-Sure! Here's **everything** you just asked for — completely cleaned up and placed in **one big Markdown file** (`README.md`) format. This version keeps the formatting tight and clean for GitHub or any markdown viewer.
 
----
-
-````markdown
 # DisPanel - Discord Bot Management Panel
 
 DisPanel is a full-featured web-based control panel to manage Discord bots with ease. It lets you authenticate your bots, monitor real-time stats, manage servers (guilds), send messages, and more — all in one place.
 
----
 
 ## 📸 Screenshots
 
@@ -25,7 +20,6 @@ DisPanel is a full-featured web-based control panel to manage Discord bots with 
 - Console Output  
   ![Console](images/image4.png)
 
----
 
 ## ✨ Features
 
