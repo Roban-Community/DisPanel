@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(235, 85%, 64%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Discord Brand Colors */
+  --discord-blurple: hsl(235, 85%, 64%);
+  --discord-blurple-dark: hsl(235, 51%, 52%);
+  --discord-green: hsl(139, 47%, 59%);
+  --discord-yellow: hsl(46, 98%, 68%);
+  --discord-red: hsl(359, 82%, 59%);
+  --discord-pink: hsl(330, 58%, 60%);
+  --discord-dark-bg: hsl(220, 13%, 18%);
+  --discord-dark-surface: hsl(223, 7%, 20%);
+  --discord-dark-text: hsl(210, 9%, 87%);
+  --discord-light-bg: hsl(0, 0%, 100%);
+  --discord-light-surface: hsl(210, 11%, 97%);
+  --discord-light-text: hsl(220, 9%, 16%);
+}
+
+.dark {
+  --background: hsl(220, 13%, 18%);
+  --foreground: hsl(210, 9%, 87%);
+  --muted: hsl(223, 7%, 20%);
+  --muted-foreground: hsl(215, 8%, 65%);
+  --popover: hsl(220, 13%, 18%);
+  --popover-foreground: hsl(210, 9%, 87%);
+  --card: hsl(223, 7%, 20%);
+  --card-foreground: hsl(210, 9%, 87%);
+  --border: hsl(215, 8%, 27%);
+  --input: hsl(215, 8%, 27%);
+  --primary: hsl(235, 85%, 64%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(223, 7%, 20%);
+  --secondary-foreground: hsl(210, 9%, 87%);
+  --accent: hsl(223, 7%, 20%);
+  --accent-foreground: hsl(210, 9%, 87%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 9%, 87%);
+  --ring: hsl(215, 8%, 65%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Discord specific utilities */
+.bg-discord-blurple {
+  background-color: var(--discord-blurple);
+}
+
+.bg-discord-blurple-dark {
+  background-color: var(--discord-blurple-dark);
+}
+
+.bg-discord-green {
+  background-color: var(--discord-green);
+}
+
+.bg-discord-yellow {
+  background-color: var(--discord-yellow);
+}
+
+.bg-discord-red {
+  background-color: var(--discord-red);
+}
+
+.bg-discord-pink {
+  background-color: var(--discord-pink);
+}
+
+.text-discord-blurple {
+  color: var(--discord-blurple);
+}
+
+.text-discord-green {
+  color: var(--discord-green);
+}
+
+.text-discord-yellow {
+  color: var(--discord-yellow);
+}
+
+.text-discord-red {
+  color: var(--discord-red);
+}
+
+.text-discord-pink {
+  color: var(--discord-pink);
+}
+
+.hover\:bg-discord-blurple-dark:hover {
+  background-color: var(--discord-blurple-dark);
+}
+
+/* Scrollbar styling */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--muted-foreground));
+}
